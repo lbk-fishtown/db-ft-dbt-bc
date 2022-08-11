@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+    - name: apjuice
+      schema: apjuice
+      tables:
+        - name: stores
+          description: store details
+          columns:
+            - name: id
+              tests:
+                - unique
+        - name: users
+          description: user details
+          columns:
+            - name: id
+              tests:
+                - not_null
