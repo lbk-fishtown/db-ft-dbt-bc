@@ -1,0 +1,14 @@
+version: 2
+
+models:
+    - name: country_sales
+      description: sales summary per country
+    - name: sales_items
+      description: intermediate table to break out sales items from json data
+      columns:
+        - name: id
+          tests:
+            - not_null
+            - unique
+    - name: top_customers
+      description: Top 100 customers by revenue

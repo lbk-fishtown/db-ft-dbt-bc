@@ -1,0 +1,18 @@
+version: 2
+
+models:
+    - name: dim_locations
+      description: store locations further classified by country
+      columns:
+        - name: id
+          tests:
+            - not_null
+    - name: dim_customers
+      description: Details of our customers.
+      columns:
+        - name: id
+          tests:
+            - not_null
+        - name: unique_id
+          description: Generated Unique identifier to identify customers who shop at multiple stores.
+        
