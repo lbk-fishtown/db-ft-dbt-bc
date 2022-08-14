@@ -34,5 +34,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   db_bootcamp:
     # Applies to all files under models/example/
+    gold:
+      +tags: gold
     silver:
+      +tags: silver
+      file_format: delta
       materialized: table
