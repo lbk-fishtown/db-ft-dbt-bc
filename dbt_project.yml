@@ -33,6 +33,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   db_bootcamp:
-    # Applies to all files under models/example/
+    file_format: delta
+    materialized: table
+    
+    gold:
+      +tags: gold
     silver:
-      materialized: table
+      +tags: silver

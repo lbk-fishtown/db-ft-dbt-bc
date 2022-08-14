@@ -1,0 +1,9 @@
+version: 2
+
+models:
+    - name: dim_locations
+      description: store locations further classified by country
+      columns:
+        - name: id
+          tests:
+            - not_null

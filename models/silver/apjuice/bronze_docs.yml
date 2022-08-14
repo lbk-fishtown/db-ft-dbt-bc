@@ -1,9 +1,17 @@
 version: 2
 
 sources:
-    - name: apjuice
-      schema: apjuice
+    - name: fivetran
+      tags: ['audit']
+      schema: master_apjuice
       tables:
+        - name: fivetran_audit  
+    - name: apjuice
+      tags: ['bronze']
+      schema: master_apjuice
+      tables:
+        - name: sales2021
+        - name: products
         - name: stores
           description: store details
           columns:
