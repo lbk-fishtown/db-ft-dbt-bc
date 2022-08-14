@@ -10,3 +10,5 @@ models:
           tests:
             - not_null
             - unique
+    - name: top_customers
+      description: Top 100 customers by revenue
