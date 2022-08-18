@@ -40,3 +40,7 @@ models:
       +tags: gold
     silver:
       +tags: silver
+
+snapshots:
+  +target_schema: snapshots
+  file_format: delta      
