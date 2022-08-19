@@ -1,9 +1,9 @@
 version: 2
 
 models:
-    - name: dim_locations
+    - name: dim_customers
       description: store locations further classified by country
       columns:
-        - name: id
+        - name: docs
           tests:
             - not_null
