@@ -1,5 +1,6 @@
 select 
-    id,
+    id ,
+    pk,
     name,
     email,
     city,
