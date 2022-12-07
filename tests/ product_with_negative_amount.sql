@@ -3,5 +3,5 @@
     , warn_if = '>0'
 )}}
 
-select * from  {{ref('sales_items')}}
+select * from  {{ ref('sales_items') }}
 where product_cost < 0
