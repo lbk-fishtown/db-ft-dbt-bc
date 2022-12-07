@@ -7,3 +7,13 @@ models:
         - name: id
           tests:
             - not_null
+
+
+    - name: dim_customers
+      description: customer details
+      columns:
+        - name: unique_id
+          description: unique customer_id and store_id combination
+          tests:
+            - not_null
+            - unique
