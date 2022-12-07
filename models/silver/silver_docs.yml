@@ -7,3 +7,11 @@ models:
         - name: id
           tests:
             - not_null
+
+models:
+    - name: dim_customers
+      description: store customer info
+      columns:
+        - name: id
+          tests:
+            - not_null
