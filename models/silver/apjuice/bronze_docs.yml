@@ -3,12 +3,12 @@ version: 2
 sources:
     - name: fivetran
       tags: ['audit']
-      schema: master_apjuice
+      schema: wtan_apjuice
       tables:
         - name: fivetran_audit  
     - name: apjuice
       tags: ['bronze']
-      schema: master_apjuice
+      schema: wtan_apjuice
       tables:
         - name: sales2021
         - name: products
