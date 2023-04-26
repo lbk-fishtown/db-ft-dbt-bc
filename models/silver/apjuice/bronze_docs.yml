@@ -5,7 +5,7 @@ sources:
       tags: ['audit']
       schema: master_apjuice
       tables:
-        - name: fivetran_audit  
+        - name: fivetran_audit
     - name: apjuice
       tags: ['bronze']
       schema: master_apjuice
@@ -24,3 +24,4 @@ sources:
             - name: id
               tests:
                 - not_null
+        - name: orange_quality
